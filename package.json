@@ -1,0 +1,53 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "react-snap",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://t:eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmNoaWRzIiwic3ViIjoiQHBpZXJyZS9zdG9yYWdlIiwicmVwbyI6IjI2YWUzYzQ3LTkzOWQtNDQ5ZS05YjM0LTk2MDJhMGQ1YTg4ZCIsInNjb3BlcyI6WyJnaXQ6cmVhZCIsImdpdDp3cml0ZSJdLCJpYXQiOjE3NzQ5NTM3NDYsImV4cCI6MTgwNjA1Nzc0Nn0.udxfBcwgGDuKAZJx-zZf8YJN0ZYba4F0EXvUq9TQ0cgt8N1rynghQvgEygm6so906ATHDYitQVNoFslu5O5Hgg@orchids.code.storage/26ae3c47-939d-449e-9b34-9602a0d5a88d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {"collapseWhitespace": false},
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "crawl": true,
+    "routes": [
+      "/",
+      "/vacansii",
+      "/zarplata",
+      "/skolko-zarabatyvaet",
+      "/otzyvy",
+      "/formaty",
+      "/podrabotka",
+      "/usloviya",
+      "/kak-nachat",
+      "/faq"
+    ]
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2",
+    "vite": "^8.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "react-snap": "^1.23.0",
+    "tailwindcss": "^4.2.2"
+  }
+}
