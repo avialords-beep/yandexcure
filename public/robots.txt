@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kurer-kazan.ru/sitemap.xml
